@@ -1,0 +1,226 @@
+.Projects {
+  // padding: 5rem 3rem; 
+  // max-width: 1000px;
+  // margin: 0 auto; 
+  
+
+  &__header{
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 5rem; 
+    
+    @media only screen and (min-width: 664px) {
+      flex-direction: row;
+      align-items: center; 
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    @media only screen and (min-width: 700px) {
+        display: grid; 
+        row-gap: 8rem; 
+    }
+  }
+
+  &__row {
+    position: relative; 
+    height: 39rem; 
+
+    &:not(:last-child) {
+      margin-bottom: 2rem; 
+      
+    }
+
+    @media only screen and (min-width: 700px) {
+        display: grid; 
+        height: 40rem; 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        column-gap: 2rem;
+
+        // grid-template-columns: 1fr 2fr;
+        // column-gap: 5%; 
+
+        &:not(:last-child) {
+          margin-bottom: 0rem; 
+        }
+
+    }
+    
+
+    &__image  {
+      display: block; 
+      height: 100%; 
+
+      cursor: pointer; 
+      // background-color: lightBlue; 
+      position: relative;
+      grid-column: 1/-1;
+      grid-row: 4/-1;
+
+      @media only screen and (min-width: 700px) {
+        grid-column: 5/-1;
+        grid-row: 1/-1;
+      }
+    }
+
+    &__links {
+        display: flex; 
+        width: 5rem; 
+        justify-content: space-between;
+    }
+
+    &__description {
+      position: absolute; 
+      z-index: 1;
+      top: 0; 
+      left: 0; 
+      bottom: 0; 
+      right: 0; 
+      padding: 3rem; 
+      background-color: rgba(0, 0, 0, 0.75);
+      display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+
+      // grid-column: 1/-1;
+      // grid-row: 1/3; 
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;   
+      
+      @media only screen and (min-width: 700px) {
+        z-index: 0;
+        grid-column: 1/4;
+        grid-row: 6/-1; 
+        background-color: transparent;
+        padding: 0;
+      }
+
+      &__keywords {
+        font-weight: 600; 
+        color: white; 
+
+        @media only screen and (min-width: 700px) {
+          color: black; 
+        }
+      }
+
+      &__text {
+        color: white; 
+        @media only screen and (min-width: 700px) {
+          color: #404040; 
+        }
+      }
+
+      &__iconLink {
+        color: white; 
+        @media only screen and (min-width: 700px) {
+          color: black; 
+        }
+      }
+    }
+
+    
+    &--reversed {
+      
+      .Projects__row__image {
+        grid-column: 1/-1;
+        grid-row: 4/-1;
+
+        @media only screen and (min-width: 700px) {
+          grid-column: 1/9;
+          grid-row: 1/-1;
+        }      
+
+        display: block; 
+        height: 100%; 
+      }
+
+      .Projects__row__description {
+        grid-column: 1/-1;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+
+        @media only screen and (min-width: 700px) {
+          grid-column: 10/-1; 
+          grid-row: 4/11;
+          text-align: right; 
+        } 
+
+        @media only screen and (min-width: 1000px) {
+          grid-row: 6/-1; 
+        } 
+
+        
+      }
+
+      .Projects__row__links {
+        align-self: flex-end; 
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    &--stacked {
+      height: 75rem; 
+      grid-template-columns: repeat(12, 1fr);
+      // column-gap: 2rem;
+      grid-template-rows: repeat(12, 1fr);
+      // grid-template-rows: repeat(10, 1fr);
+    }
+
+   
+  }
+
+  &__projectName {
+    font-size: 2rem; 
+    font-weight: 500; 
+
+    @media only screen and (min-width: 664px) {
+      font-size: inherit; 
+      font-weight: normal; 
+    } 
+  }
+
+  &__img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    filter: saturate(90%);
+    transition: filter .2s ease-in; 
+
+    @media (min-width: 700px) {
+       object-fit: contain;
+    }
+
+    @media (min-width: 1000px) {
+       object-fit: cover;
+    }
+
+    &--narrow {
+      object-position: top;
+    }
+
+    &:hover {
+      filter: saturate(100%);
+    }
+  }
+
+
+}

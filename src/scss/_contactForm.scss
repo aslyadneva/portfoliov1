@@ -1,0 +1,39 @@
+.ContactForm {
+  // background-color: grey;
+  // border: 1px red solid; 
+
+  &__section {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 3rem;
+
+    > div:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 500px) {
+      flex-direction: row; 
+
+      > div:not(:last-child) {
+        margin-right: 4rem;
+        margin-bottom: 0;
+      }
+    } 
+  }
+
+  &__group {
+    flex: 1; 
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__button > * {
+    width: 100%;
+
+    @media (min-width: 500px) {
+      width: auto; 
+      margin-left: auto; 
+    }
+    
+  }
+}

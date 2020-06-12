@@ -1,0 +1,42 @@
+.Technologies {
+
+  &__header {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  &__main {
+    margin-top: 7rem; 
+    margin-bottom: 9rem; 
+  }
+
+  &__text {
+    font-size: 1.8rem; 
+    font-weight: 300; 
+    width: 45%;
+    margin-right: 9rem;
+    margin-left: auto;
+  }
+
+  &__media {
+    display: flex; 
+    flex-wrap: wrap;
+    
+
+    @media (min-width: 669px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    height: 6.5rem; 
+    margin-right: 1rem;
+    margin-bottom: 1.5rem; 
+    filter: grayscale(100%);
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0; 
+    }
+  }
+}

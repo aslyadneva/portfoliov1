@@ -1,0 +1,18 @@
+.Button {
+  background-color: white;
+  color: black; 
+  padding: 1rem 4rem;
+  border: 2px solid black;
+  font-weight: 700;
+
+  &--secondary {
+    color: #b88b61;
+    border: .6px solid #b88b61;
+    font-size: 1.5rem; 
+    padding: 2rem 3rem;
+    font-weight: 300; 
+    letter-spacing: 15px;
+    text-transform: uppercase; 
+  }
+
+}

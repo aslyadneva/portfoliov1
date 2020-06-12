@@ -1,0 +1,42 @@
+.About {
+  max-width: 700px; 
+  border-top: 1px solid #e7e5e5;
+  border-bottom: 1px solid #e7e5e5;
+
+  &__content {
+    display: flex; 
+    flex-direction: column; 
+
+    @media (min-width: 620px) {
+      flex-direction: row; 
+      justify-content: space-between;
+      
+    }
+  }
+
+  &__text{
+    width: 80%;
+    margin-bottom: 2rem; 
+
+    @media (min-width: 620px) {
+      width: 40%;
+      margin-bottom: 0; 
+    }
+  }
+
+  &__list {
+    margin-top: 2rem;
+    display: grid; 
+    list-style: none; 
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    row-gap: .5rem; 
+  }
+
+  &__image{
+    height: 30rem; 
+  }
+
+  @media (min-width: 620px) {
+     border-top: none;
+    }
+}
