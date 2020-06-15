@@ -11,7 +11,7 @@
   &__details {
     flex: 1; 
     padding-right: 4rem; 
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 
     @media (min-width: 600px) {
       margin-bottom: 0;
@@ -28,6 +28,10 @@
     p{
       font-size: 1.2rem;
     }
+  }
+
+  &__resume {
+    margin-top: 2rem; 
   }
 
   &__form {

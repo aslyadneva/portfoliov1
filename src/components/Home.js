@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const navLinks = ['Projects', 'Contact', 'About']
 
-const navSocials = [<FaGithub className="github"/>, <FaLinkedin className="linkedin"/>]
+const navSocials = [<FaGithub site="github" url="https://github.com/aslyadneva" />, <FaLinkedin url="https://www.linkedin.com/in/anastasia-slyadneva" site="linkedin"/>]
  
 const Home = ({toggleSideNav}) => { 
   return (

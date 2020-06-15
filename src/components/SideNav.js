@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import { MdClose } from "react-icons/md";
 import { Link } from 'react-scroll'
+import ResumeButton from '../ui/ResumeButton';
 
 class SideNav extends Component  {
   componentDidMount () {
@@ -35,7 +36,7 @@ class SideNav extends Component  {
           </div>
           <nav className="SideNav__navigation">
             
-            <ul>
+            <ul style={{marginBottom: '5rem'}}>
               <li className="SideNav__navItem">
                 <Link onClick={toggleSideNav} to='projects' smooth={true}>
                   Projects
@@ -53,6 +54,8 @@ class SideNav extends Component  {
                 </Link>
               </li>
             </ul>
+
+            <ResumeButton/>
 
           </nav>
         </div>

@@ -32,7 +32,7 @@ const About = () => {
 
           <ul className="About__list">   
             {skills.map(skill => (
-              <li>
+              <li key={skill}>
                 <p style={{ display: 'flex', alignItems: 'center', fontSize: '1.2rem'}}>
                   <BsChevronRight style={{ marginRight: '4px'}}/>
                   {skill}

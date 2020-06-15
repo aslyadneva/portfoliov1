@@ -28,7 +28,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
           </a>         
 
           <div className="Projects__row__description__keywords">
-            {keywords.map(keyword => <span>{`${keyword} / `}</span>)}
+            {keywords.map((keyword, idx) => <span key={`${keyword}-${Math.random()*6}`}>{`${keyword} / `}</span>)}
           </div>
 
           <aside><p className="Projects__row__description__text">{description} </p></aside>
@@ -70,7 +70,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
           </a>         
 
               <div className="Projects__row__description__keywords">
-                {keywords.map(keyword => <span>{`${keyword} / `}</span>)}
+                {keywords.map(keyword => <span key={`${keyword}-${Math.random() * 6}`}>{`${keyword} / `}</span>)}
               </div>
 
 

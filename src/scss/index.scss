@@ -147,3 +147,22 @@ p {
   margin-right: .8rem; 
   margin-top: .8rem; 
 }
+
+.ResumeButton {
+  color: #b3b3b3; 
+  background-color: white;
+  border: 1px solid #b3b3b3; 
+  text-transform: uppercase;
+  padding: 1rem 2rem; 
+  letter-spacing: 2px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  font-size: 1.4rem; 
+
+  &:hover {
+    color: #717171; 
+    border: 1px solid #717171;
+  }
+}

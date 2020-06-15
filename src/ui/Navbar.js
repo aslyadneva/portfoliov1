@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 
 class Navbar extends Component {
   render () {
-    const {type, items, toggleSideNav} = this.props
+    const { type, items, toggleSideNav } = this.props
     
     if (type === 'primary') {
       return (
@@ -27,10 +27,10 @@ class Navbar extends Component {
           <div className={`Navbar__items Navbar__items--${type}`}> 
             {items.map(item => (
               <a 
-                href={`http://www.${item.props.className.split(' ')[0]}.com/aslyadneva`}  
+                href={item.props.url}  
                 target="_blank" rel="noopener noreferrer" 
                 className="Navbar__item" 
-                key={item}
+                key={item.props.site}
                 type='icon' 
                 style={{fontSize: '2rem'}}
               >

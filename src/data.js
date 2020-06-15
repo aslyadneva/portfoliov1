@@ -28,7 +28,7 @@ export const projectData = {
         medium: ecommerceMedium, 
         large: ecommerceLarge
       }, 
-      description: 'An e-commerce site with checkout functionality. Browsee through products, add them to cart, and search for your favorites.',
+      description: 'An e-commerce site for an apparel brand. Includes adding, removing, and editing products in cart, a shopify-inspired checkout, sorting and search features.',
       keywords: ['React.js', 'Redux', 'SCSS', 'Cloud Firestore']
     }, 
     {
@@ -40,8 +40,8 @@ export const projectData = {
         medium: igMedium,
         large: igLarge
       },  
-      description: 'Search for any instagram account, and track their stats.', 
-      keywords: ['React.js', 'Redux', 'SCSS', 'Apex Charts']
+      description: 'Track any instagram account, monitor growth and engagement, get estimated post rates.', 
+      keywords: ['React.js', 'Redux', 'IG Blade API', 'SCSS', 'Apex Charts']
     }, 
     {
       name: 'IT Consulting',
@@ -52,8 +52,8 @@ export const projectData = {
         medium: cenexMedium,
         large: cenexLarge
       },
-      description: 'An IT consulting business website template.', 
-      keywords: ['Gatsby.js', 'GraphQL', 'React.js']
+      description: 'A multi-page template for an IT consulting agency.', 
+      keywords: ['Gatsby.js', 'GraphQL', 'React.js', 'MapboxGL API']
     }
   ], 
   javascript: [

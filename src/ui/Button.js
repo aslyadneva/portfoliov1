@@ -7,3 +7,4 @@ const Button = ({title, type}) => {
 }
 
 export default Button
+ 
