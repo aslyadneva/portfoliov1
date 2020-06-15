@@ -19,11 +19,11 @@ const About = () => {
       <article className="About__content">
         <div className="About__text">
           <p>
-           After graduating from the University of Ottawa, I've taught myself everything from a simple 'hello world' to a full fledged web app.
+           After graduating from the University of Ottawa, I've taught myself everything from logging a simple 'hello world' to the console to building a single page app.
           </p>
           
           <p style={{ marginTop: '2rem' }}>
-            My focus lies in having a solid foundation of core principles, whilst using modern frameworks to enhance development.
+            My focus lies in having a solid foundation of core principles, while using modern frameworks to enhance development.
           </p>
 
           <p style={{ marginTop: '2rem' }}>

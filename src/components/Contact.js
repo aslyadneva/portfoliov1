@@ -41,9 +41,9 @@ const Contact = ({scrollToTop}) => {
       
 
 
-      <div onClick={scrollToTop} style={{textAlign: 'center', marginBottom: '-30px', marginTop: '30px', cursor: 'pointer'}}>
-        <AiOutlineArrowUp style={{ fontSize: '3rem' }}/>
-        <p>Back to top</p>
+      <div style={{textAlign: 'center', marginBottom: '-30px', marginTop: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <AiOutlineArrowUp style={{ fontSize: '3rem', cursor: 'pointer' }} onClick={scrollToTop}/>
+        <p onClick={scrollToTop} style={{ cursor: 'pointer' }}>Back to top</p>
       </div>
     </section>
   )
