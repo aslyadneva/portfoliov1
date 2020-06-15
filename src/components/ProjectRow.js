@@ -10,8 +10,8 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
         <a
           className="Projects__row__image"
           href={liveURL}
+          rel="noopener noreferrer"
           target="_blank"
-          rel="noopener_noreferrer"
         > 
           <picture>
             <source media="(min-width:1000px)" srcSet={large} />
@@ -23,7 +23,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
         {/* Description */}
         <div className="Projects__row__description">
 
-          <a href={liveURL} target="_blank" rel="noopener_noreferrer">
+          <a href={liveURL} target="_blank" rel="noopener noreferrer">
             <div style={{marginBottom: '15px'}} className="Projects__projectName Lead Lead--secondary">{name}</div>
           </a>         
 
@@ -37,8 +37,8 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
             <a 
               className="Projects__row__description__iconLink"
               href={gitURL} 
+              rel="noopener noreferrer"
               target="_blank" 
-              rel="noopener_noreferrer" 
               style={{ fontSize: "1.6rem" }}
             >
               <FaGithub />
@@ -46,7 +46,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
             <a 
               className="Projects__row__description__iconLink"
               href={liveURL} 
-              rel="noopener_noreferrer" 
+              rel="noopener noreferrer"
               target="_blank"         
               style={{ fontSize: "1.6rem" }}
             >
@@ -65,7 +65,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
             {/* Description */}
             <div className="Projects__row__description">
 
-          <a href={liveURL} target="_blank" rel="noopener_noreferrer">
+          <a href={liveURL} target="_blank" rel="noopener noreferrer">
             <div style={{ marginBottom: '15px' }} className="Projects__projectName Lead Lead--secondary">{name}</div>
           </a>         
 
@@ -84,7 +84,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
                   className="Projects__row__description__iconLink" 
                   href={gitURL} 
                   target="_blank" 
-                  rel="noopener_noreferrer" 
+                  rel="noopener noreferrer"
                   style={{ fontSize: "1.6rem" }}
                 >
                   <FaGithub />
@@ -93,7 +93,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
                   className="Projects__row__description__iconLink" 
                   href={liveURL}
                   target="_blank" 
-                  rel="noopener_noreferrer" 
+                  rel="noopener noreferrer"
                   style={{ fontSize: "1.6rem" }}
                 >
                   <FaExternalLinkAlt />
@@ -107,7 +107,7 @@ const ProjectRow = ({name, images: {small, medium, large}, keywords, reversed, d
               className="Projects__row__image"
               href={liveURL}
               target="_blank"
-              rel="noopener_noreferrer" 
+              rel="noopener noreferrer"
             >
               <picture >
                 <source media="(min-width:1000px)" srcSet={large} />

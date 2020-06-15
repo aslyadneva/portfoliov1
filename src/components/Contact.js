@@ -1,9 +1,8 @@
 import React from 'react'
 import Header from '../ui/Header'
 import Form from './Form'
-import { FaGithub, FaEnvelope, FaMapPin, FaFilePdf } from 'react-icons/fa'
+import { FaGithub, FaEnvelope, FaMapPin } from 'react-icons/fa'
 import { AiOutlineArrowUp } from "react-icons/ai";
-import Button from '../ui/Button';
 import ResumeButton from '../ui/ResumeButton';
 
 const Contact = ({scrollToTop}) => {

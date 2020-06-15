@@ -55,6 +55,7 @@ class Projects extends Component {
                     viewProject={this.props.viewProject}
                   />
         }
+        return null
       })
     } else if (this.state.active === 1) {
       return projectData.javascript.map((project, idx) => {
@@ -77,6 +78,7 @@ class Projects extends Component {
                     viewProject={this.props.viewProject}
                   />
         }
+        return null
       })
     } else if (this.state.active === 2) {
       return projectData['html/css'].map((project, idx) => {
@@ -99,6 +101,7 @@ class Projects extends Component {
                     viewProject={this.props.viewProject}
                   />
         }
+        return null
       })
     }
   } 
