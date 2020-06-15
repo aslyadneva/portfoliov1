@@ -1,8 +1,5 @@
-import React, {Component, Fragment} from 'react'; 
+import React, {Component} from 'react'; 
 import Header from '../ui/Header'; 
-
-import ecommerce from '../assets/ecommerce.jpg'; 
-import igDash from '../assets/igdashboard.jpg'; 
 
 import { projectData } from '../data'; 
 import ProjectRow from './ProjectRow';
@@ -41,6 +38,8 @@ class Projects extends Component {
                     description={project.description}
                     keywords={project.keywords}
                     reversed={false}
+                    liveURL={project.liveURL}
+                    gitURL={project.gitURL}
                     viewProject={this.props.viewProject}
                   />
         } else if (idx % 2 === 0) {
@@ -51,6 +50,8 @@ class Projects extends Component {
                     description={project.description}
                     keywords={project.keywords}
                     reversed={true}
+                    liveURL={project.liveURL}
+                    gitURL={project.gitURL}
                     viewProject={this.props.viewProject}
                   />
         }

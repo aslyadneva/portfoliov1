@@ -2,11 +2,13 @@ import React from 'react';
 import ocean from '../assets/ocean1.mp4'; 
 
 import Lead from '../ui/Lead'; 
-import Navbar from '../ui/Navbar';
+import Navbar from '../ui/Navbar'; 
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 
 const navLinks = ['Projects', 'Contact', 'About']
 
-const navSocials = [<i className="github fab fa-github fa-lg"></i>, <i className="linkedin fab fa-linkedin-in fa-lg"></i>]
+const navSocials = [<FaGithub className="github"/>, <FaLinkedin className="linkedin"/>]
  
 const Home = ({toggleSideNav}) => { 
   return (
@@ -23,16 +25,25 @@ const Home = ({toggleSideNav}) => {
        
         <div className="Home__content">
 
-          <header className="Home__header" data-aos="fade-right" data-aos-duration="1000">
+          <header 
+            className="Home__header" 
+            data-aos="fade-right" 
+            data-aos-duration="1000" 
+            data-aos-once="true"
+          >
             Anastasia <br/> front-end developer
           </header>
 
-          <div className="Home__text" data-aos="fade-up" data-aos-duration="1000">
-            <Lead title="Introduce"/>
+          <div 
+            className="Home__text" 
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-once="true"
+          > 
+            <Lead title="Hello"/>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
-              Praesentium impedit unde dolorum cum. <br/>
-              Pariatur beatae numquam, non est impedit possimus.
+              Hi there! I'm Anastasia, a front-end developer based in Dallas, TX. <br/>
+              I love to learn new technologies and bring beautiful designs to life on the web.
             </p>
           </div>
 

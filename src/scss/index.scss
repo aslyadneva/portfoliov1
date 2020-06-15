@@ -61,9 +61,13 @@ ul {
   list-style: none;
 }
 
-// a, a:visited {
-//   color: black; 
-// }
+a[type="icon"] {
+  color: black; 
+
+  &:hover {
+    color: #b3b3b3; 
+  }
+}
 
 label {
   color: #b3b3b3;
@@ -97,7 +101,6 @@ p {
   font-size: 1.6rem; 
   color: #404040; 
   font-weight: 300; 
-  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -132,7 +135,7 @@ p {
   font-size: 1.3rem;
 
   @media (min-width: 669px) {
-    padding: 8rem 3rem; 
+    padding: 8rem 4rem; 
   }
 }
 

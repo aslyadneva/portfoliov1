@@ -26,7 +26,7 @@
       background-color: black; 
     }
 
-    @media (min-width: 669px) {
+    @media (min-width: 990px) {
       display: none; 
     }
   }
@@ -34,9 +34,9 @@
   &__items {
     display: none; 
 
-    @media (min-width: 669px) {
+    @media (min-width: 990px) {
       display: grid; 
-      grid-template-columns: min-content min-content min-content;
+      grid-auto-flow: column;
 
       &--primary {
         column-gap: 2rem;
@@ -63,6 +63,10 @@
     cursor: pointer;
 
     &--active {
+      color: #b3b3b3; 
+    }
+
+    &:hover {
       color: #b3b3b3; 
     }
   }

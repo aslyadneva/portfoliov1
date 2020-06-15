@@ -81,19 +81,13 @@
       padding: 3rem; 
       background-color: rgba(0, 0, 0, 0.75);
       display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
-
-      // grid-column: 1/-1;
-      // grid-row: 1/3; 
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;   
+      flex-direction: column;
+      justify-content: space-between; 
       
       @media only screen and (min-width: 700px) {
         z-index: 0;
         grid-column: 1/4;
-        grid-row: 6/-1; 
+        grid-row: 4/11; 
         background-color: transparent;
         padding: 0;
       }
@@ -109,6 +103,7 @@
 
       &__text {
         color: white; 
+        font-size: 1.4rem; 
         @media only screen and (min-width: 700px) {
           color: #404040; 
         }
@@ -149,10 +144,6 @@
           grid-column: 10/-1; 
           grid-row: 4/11;
           text-align: right; 
-        } 
-
-        @media only screen and (min-width: 1000px) {
-          grid-row: 6/-1; 
         } 
 
         

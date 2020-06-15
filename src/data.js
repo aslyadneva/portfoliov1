@@ -1,24 +1,28 @@
 import ecommerceSmall from './assets/ecommerce.jpg'
 import ecommerceMedium from './assets/ecommerce-med.png'
-import ecommerceLarge from './assets/screenshotECom.png'; 
+import ecommerceLarge from './assets/ecom-large.png'; 
 
 import igSmall from './assets/ig-small.png'
 import igMedium from './assets/ig-med.png'
 import igLarge from './assets/ig-large.png'; 
 
+import cenexLarge from './assets/cenex-large.png'
+import cenexMedium from './assets/cenex-med.png'
+import cenexSmall from './assets/cenex-small.png'; 
+
 
 import budgety from './assets/budgety.jpg'; 
 import trillo from './assets/trillo.jpg'; 
 import nexter from './assets/nexter.jpg'; 
-import cenex from './assets/cenexscreenshot.png'; 
+
 
 
 export const projectData = {
   react: [
     {
       name: 'E-Commerce', 
-      // liveURL: 'https://cenex-consulting-template.netlify.app/', 
-      // gitURL: '',
+      liveURL: 'https://ecom-site.netlify.app', 
+      gitURL: 'https://github.com/aslyadneva/ecommerce-store',
       images: {
         small: ecommerceSmall, 
         medium: ecommerceMedium, 
@@ -29,8 +33,8 @@ export const projectData = {
     }, 
     {
       name: 'IG Dashboard', 
-      // liveURL: 'https://cenex-consulting-template.netlify.app/',
-      // gitURL: '',
+      liveURL: 'https://ig-dashboard.netlify.app',
+      gitURL: 'https://github.com/aslyadneva/Instagram-Analytics-Dashboard',
       images: {
         small: igSmall,
         medium: igMedium,
@@ -41,12 +45,12 @@ export const projectData = {
     }, 
     {
       name: 'IT Consulting',
-      // liveURL: 'https://cenex-consulting-template.netlify.app/',
-      // gitURL: '',
+      liveURL: 'https://cenex-consulting-template.netlify.app/',
+      gitURL: 'https://github.com/aslyadneva/CenexConsulting',
       images: {
-        small: cenex,
-        medium: cenex,
-        large: cenex
+        small: cenexSmall,
+        medium: cenexMedium,
+        large: cenexLarge
       },
       description: 'An IT consulting business website template.', 
       keywords: ['Gatsby.js', 'GraphQL', 'React.js']

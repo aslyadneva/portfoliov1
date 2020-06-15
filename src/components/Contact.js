@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../ui/Header'
 import Form from './Form'
 import { FaGithub, FaEnvelope, FaMapPin, FaFilePdf } from 'react-icons/fa'
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Contact = ({scrollToTop}) => {
   return (
@@ -37,7 +38,10 @@ const Contact = ({scrollToTop}) => {
       
 
 
-      <div onClick={scrollToTop}>Scroll to top</div>
+      <div onClick={scrollToTop} style={{textAlign: 'center', marginBottom: '-30px', marginTop: '30px', cursor: 'pointer'}}>
+        <AiOutlineArrowUp style={{ fontSize: '3rem' }}/>
+        <p>Back to top</p>
+      </div>
     </section>
   )
 }

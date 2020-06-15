@@ -15,12 +15,13 @@
   }
 
   &__text{
-    width: 80%;
-    margin-bottom: 2rem; 
+    margin-bottom: 3rem; 
+    max-width: 90%;
 
     @media (min-width: 620px) {
-      width: 40%;
+      max-width: 47%;
       margin-bottom: 0; 
+      margin-right: 6rem;
     }
   }
 
@@ -33,7 +34,13 @@
   }
 
   &__image{
-    height: 30rem; 
+    height: 20rem;
+    width: 20rem;
+
+    @media (min-width: 620px) {
+      height: 25rem;
+      width: 60%;
+    }
   }
 
   @media (min-width: 620px) {
