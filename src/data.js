@@ -53,7 +53,7 @@ export const projectData = {
         large: cenexLarge
       },
       description: 'A multi-page template for an IT consulting agency.', 
-      keywords: ['Gatsby.js', 'GraphQL', 'React.js', 'MapboxGL API']
+      keywords: ['Gatsby.js', 'GraphQL', 'React.js']
     }
   ], 
   javascript: [
