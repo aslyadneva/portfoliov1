@@ -1,56 +1,54 @@
 .SideNav {
-  position: fixed; 
+  position: fixed;
   height: 100vh;
-  width: 100vw; 
+  width: 100vw;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
   display: flex;
-  z-index: 2; 
+  z-index: 100;
   transform: translateX(100%);
   transition: transform 0.3s ease-out;
 
   &--open {
     transform: translateX(0);
-    // display: flex; 
+    // display: flex;
     // width: 100vw;
   }
 
   &__fill {
-    width: 30%; 
+    width: 30%;
     // background-color: rgba(98, 98, 98, 0.39);
-  } 
+  }
 
   &__bar {
     background-color: white;
-    width: 80%; 
+    width: 80%;
     padding: 9vw;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    box-shadow: -4px 0px 14px -6px rgba(0,0,0,0.44);
+    box-shadow: -4px 0px 14px -6px rgba(0, 0, 0, 0.44);
   }
 
   &__icon {
-    cursor: pointer; 
+    cursor: pointer;
     align-self: flex-start;
     font-size: 2.5rem;
   }
 
   &__navigation {
-    text-align: right; 
+    text-align: right;
   }
 
   &__navItem {
-    cursor: pointer; 
-    font-size: 2.2rem; 
-    font-weight: 600; 
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 3rem;
   }
 
   @media (min-width: 669px) {
-
   }
 }
-
