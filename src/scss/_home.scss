@@ -1,66 +1,66 @@
 .Home {
-  height: 100vh; 
-  
-  width: 100vw; 
-  position: relative; 
-  display: grid;  
-  max-height: 1050px;
- 
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: grid;
+
   @media only screen and (min-width: 664px) {
     grid-template-columns: 2fr 3fr;
   }
-  
+
+  @media only screen and (min-height: 1050px) {
+    min-height: 1050px;
+  }
+
   &__media {
-    display: none; 
+    display: none;
     background-color: lightblue;
     // box-shadow: 0 0 5px 10px white;
 
     @media only screen and (min-width: 664px) {
-      display: block
+      display: block;
     }
-    
 
     video {
-      width: 100%; 
-      height: 100%; 
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       filter: saturate(40%) brightness(1.15);
-     
     }
   }
 
   &__main {
-    position: relative; 
-    
+    position: relative;
   }
 
   &__navbar {
-    position: absolute; 
+    position: absolute;
     top: 30px;
     right: 30px;
   }
 
   &__socials {
-    position: absolute; 
+    position: absolute;
     bottom: 30px;
     right: 30px;
   }
 
   &__header {
-    // position: absolute; 
+    // position: absolute;
     top: 15%;
-    left: 15%;   
-    // width: 85vw; 
-    font-size: 5rem; 
-    // font-size: 7vw; 
-    font-weight: 700; 
-    margin-bottom: 5rem; 
+    left: 15%;
+    // width: 85vw;
+    font-size: 5rem;
+    // font-size: 7vw;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    z-index: 99;
 
     @media only screen and (min-width: 664px) {
-      font-size: 7.5rem; 
-      top: 150px; 
-      left: -90px; 
-      width: 55vw; 
+      font-size: 7.5rem;
+      top: 150px;
+      left: -90px;
+      width: 55vw;
       margin-left: -17.5vw;
     }
   }
@@ -70,7 +70,7 @@
     width: 100%;
     padding: 6rem 4rem;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 
     @media only screen and (min-width: 664px) {
       padding: 10vw;
@@ -78,32 +78,32 @@
   }
 
   &__arrows {
-    margin: auto 0; 
-    align-self: flex-end; 
-    width: 30px; 
-    display: flex; 
-    flex-direction: column; 
+    margin: auto 0;
+    align-self: flex-end;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
 
     div {
-      border-bottom: 1px solid black; 
+      border-bottom: 1px solid black;
       margin-bottom: 15px;
     }
   }
 
   &__text {
-    margin-top: auto; 
-    max-width: 334px; 
+    margin-top: auto;
+    max-width: 334px;
 
     /* prevent mobile safari from cutting off text */
-    
+
     margin-bottom: 9rem;
 
-     @media only screen and (min-width: 664px) {
-      margin-bottom:0;
+    @media only screen and (min-width: 664px) {
+      margin-bottom: 0;
     }
 
-    p { 
-      line-height: 1.6; 
+    p {
+      line-height: 1.6;
     }
   }
 }
